@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* { box-sizing: border-box; }
+.row::after { content: ""; clear: both; display: table; }
+[class*="col-"] { float: left; padding: 15px; }
+.col-1 {width: 8.33%;} .col-2 {width: 16.66%;} .col-3 {width: 25%;}
+.col-4 {width: 33.33%;} .col-5 {width: 41.66%;} .col-6 {width: 50%;}
+.col-7 {width: 58.33%;} .col-8 {width: 66.66%;} .col-9 {width: 75%;}
+.col-10 {width: 83.33%;} .col-11 {width: 91.66%;} .col-12 {width: 100%;}
+
+html { font-family: "Lucida Sans", sans-serif; }
+.header { background-color: #9933cc; color: #ffffff; padding: 15px; }
+.menu ul { list-style-type: none; margin: 0; padding: 0; }
+.menu li {
+	padding: 8px; margin-bottom: 7px; background-color: #33b5e5;
+	color: #ffffff; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+	text-align: center;
+}
+.menu a { text-decoration: none; }
+.menu li:hover { background-color: #0099cc; cursor: pointer; }
+
+@media screen and (max-width:900px)
+{
+[class*="col-"]{
+  float:top;
+  width:100%;
+  }
+  .menu ul{
+  display:flex;
+  overflow-x:scroll;
+  gap:5px;
+  }
+  .menu li{
+  flex-shrink:0;
+  }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	<h1>LE SSERAFIM MEMBERS</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+	<ul>
+		<!-- ERA 1: Made My Night -->
+		<a href="index.html"><li>HOME</li></a>
+		<a href="sakura_mmn.html"><li>SAKURA - Made My Night</li></a>
+		<a href="chaewon_mmn.html"><li>CHAEWON - Made My Night</li></a>
+		<a href="yunjin_mmn.html"><li>YUNJIN - Made My Night</li></a>
+		<a href="kazuha_mmn.html"><li>KAZUHA - Made My Night</li></a>
+		<a href="eunchae_mmn.html"><li>EUNCHAE - Made My Night</li></a>
+
+		<!-- ERA 2: Pureflow Pt. 1 -->
+		<a href="sakura_pf.html"><li>SAKURA - Pureflow Pt. 1</li></a>
+		<a href="chaewon_pf.html"><li>CHAEWON - Pureflow Pt. 1</li></a>
+		<a href="yunjin_pf.html"><li>YUNJIN - Pureflow Pt. 1</li></a>
+		<a href="kazuha_pf.html"><li>KAZUHA - Pureflow Pt. 1</li></a>
+		<a href="eunchae_pf.html"><li>EUNCHAE - Pureflow Pt. 1</li></a>
+
+		<!-- ERA 3: Spaghetti -->
+		<a href="sakura_spaghetti.html"><li>SAKURA - Spaghetti</li></a>
+		<a href="chaewon_spaghetti.html"><li>CHAEWON - Spaghetti</li></a>
+		<a href="yunjin_spaghetti.html"><li>YUNJIN - Spaghetti</li></a>
+		<a href="kazuha_spaghetti.html"><li>KAZUHA - Spaghetti</li></a>
+		<a href="eunchae_spaghetti.html"><li>EUNCHAE - Spaghetti</li></a>
+
+		<!-- ERA 4: Hot -->
+		<a href="sakura_hot.html"><li>SAKURA - Hot</li></a>
+		<a href="chaewon_hot.html"><li>CHAEWON - Hot</li></a>
+		<a href="yunjin_hot.html"><li>YUNJIN - Hot</li></a>
+		<a href="kazuha_hot.html"><li>KAZUHA - Hot</li></a>
+		<a href="eunchae_hot.html"><li>EUNCHAE - Hot</li></a>
+	</ul>
+</div>
+
+<div class="col-6">
+<p align="center">
+	<!-- UPDATE THIS IMAGE PATH FOR EACH FILE -->
+	<a href="../largepix/yunjin_pf.jpg"><img src="../largepix/yunjin_pf.jpg" width="100%" height="auto"></a>
+</p>
+</div>
+
+<div class="col-3">
+	<!-- UPDATE THIS TEXT FOR EACH FILE -->
+	<h1>HUH YUNJIN</h1>
+	<p>Channeling a clean, acoustic sensibility with raw emotional weight, Yunjin grounds the "Pureflow Pt. 1" aesthetic through her magnetic artistic aura and effortless, unfiltered gaze.</p>
+</div>
+
+</div>
+
+</body>
+</html>
